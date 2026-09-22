@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CLICK SEGURO 💜 | Ciberacoso y redes</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+:root{--purple:#7c3aed;--pink:#ec4899;--blue:#2563eb;--cyan:#06b6d4;--ink:#20203a;--cream:#fffaf5}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Poppins,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 10% 10%,#f0abfc66,transparent 25%),radial-gradient(circle at 90% 20%,#67e8f966,transparent 24%),radial-gradient(circle at 50% 100%,#c4b5fd66,transparent 30%)}
+h1,h2,h3{font-family:"Baloo 2",cursive;margin-top:0}
+.top{background:#17152b;color:#fff;text-align:center;padding:9px;font-size:.82rem}
+nav{position:sticky;top:0;z-index:50;background:#ffffffdd;backdrop-filter:blur(15px);display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:11px;box-shadow:0 5px 25px #26134d14}
+nav a{text-decoration:none;color:#3b315d;font-weight:700;padding:8px 13px;border-radius:30px;font-size:.88rem}
+nav a:hover{background:#ede9fe;color:var(--purple)}
+.hero{min-height:620px;display:grid;place-items:center;padding:55px 20px;position:relative;overflow:hidden}
+.hero-inner{max-width:1100px;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}
+.badge{display:inline-block;background:#ede9fe;color:#6d28d9;border:1px solid #ddd6fe;padding:8px 14px;border-radius:99px;font-weight:700;margin-bottom:16px}
+.hero h1{font-size:clamp(3.2rem,8vw,6.5rem);line-height:.85;margin-bottom:20px;background:linear-gradient(90deg,#7c3aed,#ec4899,#0891b2);-webkit-background-clip:text;color:transparent}
+.hero p{font-size:1.08rem;max-width:620px}
+.cta{display:inline-block;background:linear-gradient(100deg,var(--purple),var(--pink));color:#fff;text-decoration:none;padding:14px 22px;border-radius:18px;font-weight:800;box-shadow:0 12px 25px #7c3aed45;margin-top:12px}
+.phone{height:430px;max-width:260px;margin:auto;border:10px solid #17152b;border-radius:40px;background:#fff;box-shadow:20px 25px 50px #39205d35;overflow:hidden;transform:rotate(4deg)}
+.screen{padding:22px;background:linear-gradient(145deg,#ede9fe,#fdf2f8);height:100%}
+.notif{background:#fff;border-radius:18px;padding:13px;margin:10px 0;box-shadow:0 8px 20px #00000012}
+.notif strong{display:block}
+.float{position:absolute;border-radius:50%;opacity:.7;animation:bob 4s infinite ease-in-out}
+.f1{width:90px;height:90px;background:#f0abfc;left:4%;top:12%}.f2{width:65px;height:65px;background:#67e8f9;right:5%;top:25%;animation-delay:1s}.f3{width:45px;height:45px;background:#fde68a;left:40%;bottom:8%;animation-delay:2s}
+@keyframes bob{50%{transform:translateY(-20px) rotate(8deg)}}
+main{max-width:1120px;margin:auto;padding:10px 18px 60px}
+section{margin:35px 0;padding:34px;border-radius:32px;background:#ffffffd9;box-shadow:0 18px 45px #3d236d12;border:1px solid #fff}
+.title{text-align:center;margin-bottom:25px}
+.title span{color:var(--pink)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:17px}
+.card{padding:22px;border-radius:24px;background:#fff;box-shadow:0 8px 25px #3d236d12;transition:.25s;border:1px solid #eee}
+.card:hover{transform:translateY(-6px) rotate(-.5deg);box-shadow:0 15px 30px #3d236d20}
+.emoji{font-size:2.3rem}.card h3{font-size:1.35rem;margin:8px 0}
+.purple{background:linear-gradient(145deg,#f5f3ff,#fff)}.pink{background:linear-gradient(145deg,#fdf2f8,#fff)}.cyan{background:linear-gradient(145deg,#ecfeff,#fff)}.yellow{background:linear-gradient(145deg,#fffbeb,#fff)}
+.steps{display:grid;gap:13px;max-width:800px;margin:auto}
+.step{display:flex;gap:15px;align-items:flex-start;padding:18px;background:#fafafa;border-radius:20px;border:2px solid #f0eef8}
+.num{min-width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#7c3aed,#ec4899);color:white;display:grid;place-items:center;font-weight:800}
+.case{margin:16px 0;padding:23px;border-radius:25px;background:#fff;border:2px dashed #ddd6fe}
+.case h3{font-size:1.4rem}.options{display:flex;flex-wrap:wrap;gap:8px}
+button{font:inherit;border:0;border-radius:13px;padding:10px 14px;background:#f3f4f6;color:#27233d;font-weight:700;cursor:pointer}
+button:hover{background:#ede9fe}.answer{font-weight:700;margin-top:12px}
+.game{background:#17152b;color:white;border-radius:30px;padding:28px;margin:18px 0;box-shadow:0 15px 35px #17152b30}
+.game h3{color:#f0abfc;font-size:1.6rem}.game button{background:#fff;margin:4px}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:13px}
+.contact{background:#fff;border-radius:20px;padding:18px;border:2px solid #eee}
+.contact .number{font-size:1.55rem;font-weight:800;color:#7c3aed}
+.source{font-size:.82rem;color:#64748b}
+footer{background:#17152b;color:white;text-align:center;padding:38px 20px}
+footer strong{color:#f0abfc}
+@media(max-width:760px){.hero-inner{grid-template-columns:1fr;text-align:center}.hero p{margin:auto}.phone{height:350px}.hero{min-height:auto}.hero h1{font-size:4rem}section{padding:23px}}
+</style>
+</head>
+
+<body>
+  <div style="background:#111827;color:#fff;text-align:center;padding:10px 16px;font-family:Arial,sans-serif;font-size:14px;letter-spacing:.2px;">
+    <strong>Equipo 3</strong> · Joann Vallejo · Danna Palomino · Marcelo Ortiz · Adriano Cely · Mauricio Herrera
+  </div>
+
+<div class="top">💜 INTERNET SEGURA • RESPETO • EMPATÍA • PREVENCIÓN 💜</div>
+<nav>
+<a href="#inicio">Inicio</a><a href="#ciber">Ciberacoso</a><a href="#actuar">¿Qué hago?</a><a href="#redes">Redes</a><a href="#casos">Casos</a><a href="#juegos">🎮 Juegos</a><a href="#ayuda">🆘 Ayuda</a>
+</nav>
+
+<header class="hero" id="inicio">
+<div class="float f1"></div><div class="float f2"></div><div class="float f3"></div>
+<div class="hero-inner">
+<div>
+<div class="badge">✨ APRENDE • PROTÉGETE • CONECTA</div>
+<h1>CLICK<br>SEGURO</h1>
+<p><strong>Tu mundo digital también merece respeto.</strong> Aprende a reconocer el ciberacoso, cuidar tu información y saber qué hacer cuando algo no está bien.</p>
+<a class="cta" href="#ciber">🚀 Empezar</a>
+</div>
+<div class="phone">
+<div class="screen">
+<h3>📱 Tu red segura</h3>
+<div class="notif"><strong>🔐 Privacidad</strong><small>Tu cuenta está protegida</small></div>
+<div class="notif"><strong>💜 Respeto</strong><small>Piensa antes de publicar</small></div>
+<div class="notif"><strong>🆘 Ayuda</strong><small>No tienes que enfrentarlo solo</small></div>
+<div class="notif"><strong>🎮 Aprende jugando</strong><small>¡Pon a prueba lo que sabes!</small></div>
+</div></div>
+</div>
+</header>
+
+<main>
+<section id="ciber">
+<div class="title"><h2>🚨 ¿Qué es el <span>ciberacoso</span>?</h2><p>Conocerlo es el primer paso para prevenirlo.</p></div>
+<div class="cards">
+<div class="card purple"><div class="emoji">💬</div><h3>Insultos</h3><p>Mensajes, comentarios o publicaciones para humillar o atacar a una persona.</p></div>
+<div class="card pink"><div class="emoji">📸</div><h3>Contenido sin permiso</h3><p>Compartir fotos, videos o capturas para avergonzar a alguien.</p></div>
+<div class="card cyan"><div class="emoji">👥</div><h3>Exclusión</h3><p>Crear grupos para burlarse de una persona o excluirla intencionalmente.</p></div>
+<div class="card yellow"><div class="emoji">🎮</div><h3>En videojuegos</h3><p>Insultos, amenazas o acoso repetido en chats y partidas.</p></div>
+</div>
+</section>
+
+<section id="actuar">
+<div class="title"><h2>🛡️ Si te pasa, <span>¿qué haces?</span></h2></div>
+<div class="steps">
+<div class="step"><div class="num">1</div><div><strong>NO RESPONDAS CON AGRESIONES</strong><br>No alimentes la pelea ni devuelvas los insultos.</div></div>
+<div class="step"><div class="num">2</div><div><strong>GUARDA LAS PRUEBAS</strong><br>Haz capturas y conserva mensajes, perfiles, fechas y enlaces.</div></div>
+<div class="step"><div class="num">3</div><div><strong>BLOQUEA Y REPORTA</strong><br>Utiliza las herramientas de la plataforma.</div></div>
+<div class="step"><div class="num">4</div><div><strong>CUÉNTASELO A ALGUIEN</strong><br>Habla con un adulto de confianza, docente o tutor.</div></div>
+<div class="step"><div class="num">5</div><div><strong>BUSCA AYUDA</strong><br>Si la situación es grave, utiliza los canales oficiales de ayuda.</div></div>
+</div>
+</section>
+
+<section id="redes">
+<div class="title"><h2>📲 Usa tus redes de forma <span>inteligente</span></h2></div>
+<div class="cards">
+<div class="card"><div class="emoji">🔐</div><h3>Protege tus cuentas</h3><p>Contraseñas fuertes + verificación en dos pasos. Nunca compartas tu contraseña.</p></div>
+<div class="card"><div class="emoji">👀</div><h3>Revisa tu privacidad</h3><p>Decide quién puede ver tus publicaciones, historias, ubicación y datos.</p></div>
+<div class="card"><div class="emoji">🧠</div><h3>Piensa antes de publicar</h3><p>Lo que subes puede copiarse o compartirse. Pregúntate si estarías cómodo viéndolo público.</p></div>
+<div class="card"><div class="emoji">📍</div><h3>Cuida tu ubicación</h3><p>Evita publicar dirección, horarios o información que permita localizarte.</p></div>
+<div class="card"><div class="emoji">🔎</div><h3>Verifica</h3><p>Antes de compartir una noticia, imagen o rumor, revisa de dónde viene.</p></div>
+<div class="card"><div class="emoji">💗</div><h3>Respeta</h3><p>No compartas contenido para humillar. Detrás de cada cuenta hay una persona.</p></div>
+</div>
+</section>
+
+<section id="casos">
+<div class="title"><h2>🎭 ¿Qué harías tú?</h2><p>Lee cada situación y elige una respuesta.</p></div>
+<div class="case"><h3>💬 Caso 1 — El grupo de clase</h3><p>Crean un grupo para burlarse de un compañero y publican memes sobre él todos los días.</p><div class="options"><button onclick="check(this,'bad')">😈 Me uno a las burlas</button><button onclick="check(this,'good')">🛡️ No participo, guardo evidencia y pido ayuda</button><button onclick="check(this,'bad')">🔥 Respondo insultando</button></div><div class="answer"></div></div>
+<div class="case"><h3>📸 Caso 2 — Foto sin permiso</h3><p>Publican una foto vergonzosa de una estudiante y otras personas comienzan a compartirla.</p><div class="options"><button onclick="check(this,'bad')">📤 La comparto</button><button onclick="check(this,'good')">🆘 Guardo evidencia, reporto y aviso a un adulto</button><button onclick="check(this,'bad')">😡 Amenazo al responsable</button></div><div class="answer"></div></div>
+<div class="case"><h3>🎮 Caso 3 — Alguien desconocido</h3><p>Una persona que no conoces te pide tu dirección y una foto personal.</p><div class="options"><button onclick="check(this,'bad')">📍 Se la doy</button><button onclick="check(this,'good')">🔒 No comparto datos, bloqueo y aviso</button><button onclick="check(this,'bad')">🤞 Se la doy si promete no contarla</button></div><div class="answer"></div></div>
+</section>
+
+<section id="juegos">
+<div class="title"><h2>🎮 Zona de <span>juegos</span></h2><p>¡Aprende jugando!</p></div>
+<div class="game"><h3>🚦 Semáforo digital</h3><p>Un amigo te pide tu contraseña “para ayudarte” con tu cuenta. ¿Qué color es?</p><button onclick="game(this,'bad')">🟢 Verde</button><button onclick="game(this,'bad')">🟡 Amarillo</button><button onclick="game(this,'good')">🔴 Rojo</button><div class="answer"></div></div>
+<div class="game"><h3>🧠 Verdadero o falso</h3><p>“Si una publicación es privada, nadie puede hacerle captura.”</p><button onclick="game(this,'good')">❌ Falso</button><button onclick="game(this,'bad')">✅ Verdadero</button><div class="answer"></div></div>
+<div class="game"><h3>🏆 Reto final</h3><p>¿Cuál ayuda a proteger una cuenta?</p><button onclick="game(this,'bad')">Compartir mi contraseña</button><button onclick="game(this,'good')">Activar verificación en dos pasos</button><button onclick="game(this,'bad')">Aceptar a cualquier desconocido</button><div class="answer"></div></div>
+</section>
+
+<section id="ayuda">
+<div class="title"><h2>🆘 Ayuda en <span>Perú</span></h2><p>Si algo ocurre, pedir ayuda es una buena decisión.</p></div>
+<div class="contact-grid">
+<div class="contact"><div class="number">0800-76-888</div><strong>SíseVe — MINEDU</strong><p>Reporte de violencia escolar.</p><p>WhatsApp: <strong>991 410 000</strong></p></div>
+<div class="contact"><div class="number">100</div><strong>Línea 100 — MIMP</strong><p>Orientación y apoyo frente a violencia familiar y sexual. Gratuita y 24 horas.</p></div>
+<div class="contact"><div class="number">1810</div><strong>Línea 1810</strong><p>Atención relacionada con la vulneración de derechos de niñas, niños y adolescentes.</p></div>
+<div class="contact"><div class="number">105</div><strong>Policía Nacional</strong><p>Central policial para emergencias.</p></div>
+<div class="contact"><div class="number">113 → opción 5</div><strong>MINSA</strong><p>Orientación psicológica y de salud.</p></div>
+<div class="contact"><div class="number">116 / 106</div><strong>Emergencias</strong><p>116 Bomberos · 106 SAMU.</p></div>
+</div>
+<p class="source">Fuentes oficiales: SíseVe (MINEDU), MIMP “Conéctate sin riesgos” y Gobierno del Perú. Información revisada para esta página en septiembre de 2026.</p>
+</section>
+</main>
+
+<footer>
+<h2>💜 CLICK SEGURO</h2>
+<p>Conéctate. Respeta. Piensa. Pide ayuda.</p>
+<p><small>Proyecto educativo sobre ciudadanía y seguridad digital.</small></p>
+</footer>
+
+<script>
+function check(btn,type){
+ const box=btn.parentElement.parentElement.querySelector('.answer');
+ if(type==='good'){box.textContent='✨ ¡Muy bien! Esa es una forma segura de actuar.';box.style.color='#059669'}
+ else{box.textContent='💡 No es la opción más segura. Piensa en protegerte, guardar pruebas y pedir ayuda.';box.style.color='#dc2626'}
+}
+function game(btn,type){
+ const box=btn.parentElement.querySelector('.answer');
+ if(type==='good'){box.textContent='🎉 ¡Correcto!';box.style.color='#f0abfc'}
+ else{box.textContent='💡 Casi... vuelve a pensarlo.';box.style.color='#fbbf24'}
+}
+</script>
+</body>
+</html>
